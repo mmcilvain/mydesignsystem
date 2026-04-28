@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Comcast Corporate Design System",
+  "version": "2026.04",
+  "source": "General_Comcast_Corp_Template_Apr2026_1.pptx",
+  "master_theme": "Comcast General Corp Template Master",
+
+  "slide": {
+    "width_in": 13.333,
+    "height_in": 7.5,
+    "width_emu": 12192000,
+    "height_emu": 6858000,
+    "aspect_ratio": "16:9"
+  },
+
+  "colors": {
+    "neutral": {
+      "black": "#000000",
+      "white": "#FFFFFF"
+    },
+    "accents": {
+      "yellow":  { "hex": "#FBCC11", "name": "Yellow",  "theme_role": "accent1" },
+      "orange":  { "hex": "#FF7011", "name": "Orange",  "theme_role": "accent2" },
+      "red":     { "hex": "#EF1541", "name": "Red",     "theme_role": "accent3" },
+      "purple":  { "hex": "#6D54DB", "name": "Purple",  "theme_role": "accent4" },
+      "blue":    { "hex": "#059CDF", "name": "Blue",    "theme_role": "accent5" },
+      "green":   { "hex": "#05AB3E", "name": "Green",   "theme_role": "accent6" }
+    },
+    "semantic": {
+      "hyperlink": "#059CDF",
+      "followed_hyperlink": "#059CDF"
+    }
+  },
+
+  "typography": {
+    "embedded_brand_fonts": [
+      "Comcast New Vision ExtraLight",
+      "Comcast New Vision Light",
+      "Comcast New Vision",
+      "Comcast New Vision Medium",
+      "Comcast New Vision SemiBold"
+    ],
+    "fallback_fonts": {
+      "heading": "Aptos Display",
+      "body": "Aptos"
+    },
+    "roles": {
+      "heading":   { "family": "Comcast New Vision Medium",  "fallback": "Aptos Display" },
+      "body":      { "family": "Comcast New Vision",         "fallback": "Aptos" },
+      "subhead":   { "family": "Comcast New Vision",         "fallback": "Aptos" },
+      "banner":    { "family": "Comcast New Vision Medium",  "fallback": "Aptos Display" },
+      "data_stat": { "family": "Comcast New Vision Light",   "fallback": "Aptos" }
+    },
+    "sizes_pt": {
+      "title": 28,
+      "body": 14,
+      "section_header": 24,
+      "level_3": 20,
+      "level_4_plus": 18,
+      "stat_callout": 60,
+      "stat_caption": 12,
+      "banner_text": 9,
+      "page_number": 9
+    }
+  },
+
+  "grid": {
+    "margins_in": {
+      "left": 0.37,
+      "right": 0.37,
+      "top": 0.15,
+      "bottom": 0.30
+    },
+    "common_regions": {
+      "banner": { "x": 0.37, "y": 0.15, "w": 9.06, "h": 0.37, "note": "BANNER TEXT — top-left, all-caps" },
+      "title":  { "x": 0.38, "y": 0.64, "w": 12.46, "h": 0.66 },
+      "subhead":{ "x": 0.37, "y": 1.28, "w": 12.46, "h": 0.37 },
+      "page_number":   { "x": 11.82, "y": 0.21, "w": 0.39, "h": 0.19 },
+      "confidentiality":{ "x": 10.27, "y": 0.15, "w": 1.37, "h": 0.32, "default_text": "PRIVATE & CONFIDENTIAL" },
+      "content_area_full": { "x": 0.37, "y": 1.70, "w": 12.59, "h": 5.50 }
+    }
+  },
+
+  "components": {
+    "stat_callout": {
+      "value_size_pt_range": [48, 72],
+      "caption_size_pt": 12,
+      "note": "big numbers ~60pt, caption underneath ~12pt muted"
+    },
+    "key_point_row": {
+      "subheader_size_pt": 12,
+      "body_size_pt": 14,
+      "row_height_in": 1.27
+    },
+    "bento_card": {
+      "min_height_in": 2.20,
+      "min_width_in": 3.88,
+      "gap_in": 0.20
+    }
+  },
+
+  "voice_guidelines": {
+    "case": "Sentence case for titles. ALL CAPS only for banner text and section labels.",
+    "title_length": "Keep titles to one line if possible — placeholder height assumes single-line by default.",
+    "body_density": "Prefer sparse content. Bento and key-point layouts force a card per idea."
+  }
+}
